@@ -7,5 +7,8 @@ console.log("This console.log() fires when index.js loads - before DOMContentLoa
 );*/
 
 const p = document.querySelector("p")
-p.textContent = "This is really cool!
-"
+//p.textContent = "This is really cool!"
+
+document.addEventListener("DOMContentLoaded",function(){
+    return p.textContent = "This is really cool!"
+})
